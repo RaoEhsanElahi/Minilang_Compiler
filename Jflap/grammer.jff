@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!--Created with JFLAP 7.1.--><structure>
+	<type>grammar</type>
+	<!--The list of productions.-->
+	<production>
+		<left>program</left>
+		<right>stmt_list</right>
+	</production>
+	<production>
+		<left>stmt_list</left>
+		<right>stmt stmt_list</right>
+	</production>
+	<production>
+		<left>stmt</left>
+		<right>read ( identifier )</right>
+	</production>
+	<production>
+		<left>if_stmt</left>
+		<right>if ( exp ) { stmt_list }</right>
+	</production>
+	<production>
+		<left>exp</left>
+		<right>exp + exp</right>
+	</production>
+</structure>
