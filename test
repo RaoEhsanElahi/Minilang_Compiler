@@ -1,5 +1,6 @@
 int i = 0;
-
-if(i eq 0){
+int myName=56;
+if(myName eq 0){
   i = 2;
+  int g=780;
 }

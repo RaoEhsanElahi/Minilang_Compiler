@@ -5,6 +5,7 @@ global main
 section .text
 main:
   push 0
+  push 56
   push QWORD [rsp + 0]
   pop rax
   push rax
@@ -16,6 +17,8 @@ main:
   jne label0
   push 2
   pop rax
-  mov QWORD [rsp + 18446744073709551608], rax
-  push QWORD [rsp + 18446744073709551608]
+  mov QWORD [rsp + 0], rax
+  push QWORD [rsp + 0]
+  push 780
 label0:
+  pop rsi
